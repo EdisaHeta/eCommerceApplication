@@ -1,0 +1,45 @@
+2021-02-21 20:12:56.907  INFO 16672 --- [           main] com.example.demo.SareetaApplication      : Starting SareetaApplication on DESKTOP-LQ3TMQG with PID 16672 (started by Argjent in C:\Users\Argjent\Desktop\Udacity\eCommerce Application\nd035-c4-Security-and-DevOps)
+2021-02-21 20:12:56.910  INFO 16672 --- [           main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2021-02-21 20:12:57.763  INFO 16672 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-02-21 20:12:57.842  INFO 16672 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69ms. Found 4 repository interfaces.
+2021-02-21 20:12:58.374  INFO 16672 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aa6d83d5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-02-21 20:12:58.649  INFO 16672 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-21 20:12:58.679  INFO 16672 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-21 20:12:58.680  INFO 16672 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-02-21 20:12:58.859  INFO 16672 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-21 20:12:58.859  INFO 16672 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1883 ms
+2021-02-21 20:12:59.047  INFO 16672 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-21 20:12:59.140  INFO 16672 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-21 20:12:59.190  INFO 16672 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-02-21 20:12:59.253  INFO 16672 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-02-21 20:12:59.256  INFO 16672 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-02-21 20:12:59.394  INFO 16672 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-02-21 20:12:59.530  INFO 16672 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-02-21 20:13:00.296  INFO 16672 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-21 20:13:00.917  WARN 16672 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-21 20:13:00.994  INFO 16672 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@603b9d4b, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d3d4a54, org.springframework.security.web.header.HeaderWriterFilter@3e71a1f8, org.springframework.web.filter.CorsFilter@42cf5a6f, org.springframework.security.web.authentication.logout.LogoutFilter@7ae0a26, com.example.demo.security.JWTAuthenticationFilter@7b2f8152, com.example.demo.security.JWTAuthenticationVerficationFilter@6371c5ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b19b346, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b240276, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f9ccd0c, org.springframework.security.web.session.SessionManagementFilter@7cbede2b, org.springframework.security.web.access.ExceptionTranslationFilter@1eb7ec59, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b1559f1]
+2021-02-21 20:13:01.129  INFO 16672 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-21 20:13:01.306  INFO 16672 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-21 20:13:01.309  INFO 16672 --- [           main] com.example.demo.SareetaApplication      : Started SareetaApplication in 4.861 seconds (JVM running for 5.861)
+2021-02-21 20:14:54.761  INFO 16672 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-21 20:14:54.762  INFO 16672 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-21 20:14:54.770  INFO 16672 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2021-02-21 20:14:54.881  INFO 16672 --- [nio-8080-exec-1] c.e.demo.controllers.UserController      : User name set with: Edisa
+2021-02-21 20:14:54.953 ERROR 16672 --- [nio-8080-exec-1] c.e.demo.controllers.UserController      : Error with password. Either password length is less than 7 or pass and conf pass do not match. Unable to create user : Edisa
+2021-02-21 20:14:59.617  INFO 16672 --- [nio-8080-exec-4] c.e.demo.controllers.UserController      : User name set with: Edisa
+2021-02-21 20:15:18.099  INFO 16672 --- [nio-8080-exec-5] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-02-21 20:15:34.731  INFO 16672 --- [nio-8080-exec-6] c.e.demo.controllers.UserController      : User with Id: 1 was found!
+2021-02-21 20:15:34.737 ERROR 16672 --- [nio-8080-exec-6] c.e.demo.controllers.UserController      : Item not found, unable to add to cart!
+2021-02-21 20:15:42.199 ERROR 16672 --- [nio-8080-exec-7] c.e.demo.controllers.UserController      : User not found, unable to add to cart!
+2021-02-21 20:15:51.895  INFO 16672 --- [nio-8080-exec-8] c.e.demo.controllers.UserController      : User with Id: 1 was found!
+2021-02-21 20:15:51.915  INFO 16672 --- [nio-8080-exec-8] c.e.demo.controllers.UserController      : Item added in cart!
+2021-02-21 20:16:11.922 ERROR 16672 --- [nio-8080-exec-9] c.e.demo.controllers.UserController      : User not found, unable to remove from cart!
+2021-02-21 20:16:17.495  INFO 16672 --- [io-8080-exec-10] c.e.demo.controllers.UserController      : User with Id: 1 was found!
+2021-02-21 20:16:17.497 ERROR 16672 --- [io-8080-exec-10] c.e.demo.controllers.UserController      : Item not found. unable to remove from cart!
+2021-02-21 20:16:39.863  INFO 16672 --- [nio-8080-exec-2] c.e.demo.controllers.UserController      : User with Id: 1 was found!
+2021-02-21 20:16:39.868  INFO 16672 --- [nio-8080-exec-2] c.e.demo.controllers.UserController      : Item removed from cart!
+2021-02-21 20:17:08.709 ERROR 16672 --- [nio-8080-exec-1] c.e.demo.controllers.UserController      : User not found, unable to submit order!
+2021-02-21 20:17:12.553  INFO 16672 --- [nio-8080-exec-3] c.e.demo.controllers.UserController      : User with Id: 1 was found!
+2021-02-21 20:17:12.558  INFO 16672 --- [nio-8080-exec-3] c.e.demo.controllers.UserController      : Order submitted successfully!
