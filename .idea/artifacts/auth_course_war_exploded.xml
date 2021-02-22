@@ -109,6 +109,7 @@
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:5.1.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.26" />
           <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy:1.9.12" />
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.8" />
         </element>
       </element>
       <element id="directory" name="META-INF">
