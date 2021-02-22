@@ -38,17 +38,7 @@ public class CartControllerTest {
 
     @Test
     public void testAddToCart() {
-//        Cart newCart = new Cart();
-//        User newUser = createUser(1l, "Edisa", "12345678", newCart);
-//        Item newItem = createItem(1L, "Round Spinner", new BigDecimal("2"), "Spinner Desc");
-//        ModifyCartRequest newCartRequest = createCartRequest(1L, 3, "Edisa");
-//        ArrayList<Item> listOfItems = new ArrayList<Item>();
-//        listOfItems.add(newItem);
-//        newCart = createCart(1l, listOfItems, newUser);
-//
-//        when(userRepository.findByUsername("Edisa")).thenReturn(newUser);
-//        when(itemRepository.findById(1L)).thenReturn(Optional.of(newItem));
-        ModifyCartRequest  newCartRequest = createCartRelatedInfo();
+        ModifyCartRequest newCartRequest = createCartRelatedInfo();
         final ResponseEntity<Cart> response = cartController.addTocart(newCartRequest);
 
         assertNotNull(response);
@@ -62,15 +52,7 @@ public class CartControllerTest {
 
     @Test
     public void testRemoveFromCart() {
-//        Cart newCart = new Cart();
-//        User newUser = createUser(1l, "Edisa", "12345678", newCart);
-//        Item newItem = createItem(1L, "Round Spinner", new BigDecimal("2"), "Spinner Desc");
-//        ModifyCartRequest newCartRequest = createCartRequest(1L, 5, "Edisa");
-//
-//        when(userRepository.findByUsername("Edisa")).thenReturn(newUser);
-//        when(itemRepository.findById(1L)).thenReturn(Optional.of(newItem));
-        ModifyCartRequest  newCartRequest = createCartRelatedInfo();
-
+        ModifyCartRequest newCartRequest = createCartRelatedInfo();
         final ResponseEntity<Cart> response = cartController.removeFromcart(newCartRequest);
 
         assertNotNull(response);
@@ -143,6 +125,7 @@ public class CartControllerTest {
 
     /**
      * Create cart, user and item
+     *
      * @return
      */
     public ModifyCartRequest createCartRelatedInfo() {
@@ -160,11 +143,12 @@ public class CartControllerTest {
     }
 
     /**
-     * Helper method to create a ModifyCartRequest instance.
+     * Create cart request
+     *
      * @param itemId
      * @param quantity
      * @param username
-     * @return  ModifyCartRequest object
+     * @return cartRequest
      */
     public ModifyCartRequest createCartRequest(long itemId, int quantity, String username) {
         ModifyCartRequest cartRequest = new ModifyCartRequest();
@@ -175,12 +159,13 @@ public class CartControllerTest {
     }
 
     /**
-     * Helper mthod to create a User instance
+     * Create user
+     *
      * @param userId
      * @param username
      * @param password
      * @param cart
-     * @return  User object
+     * @return newUser
      */
     public User createUser(long userId, String username, String password, Cart cart) {
         User newUser = new User();
@@ -191,13 +176,15 @@ public class CartControllerTest {
         return newUser;
     }
 
+
     /**
-     * Helper method to create an Item instance
+     * Create item
+     *
      * @param id
      * @param name
      * @param price
      * @param description
-     * @return  Item object.
+     * @return newItem
      */
     public Item createItem(Long id, String name, BigDecimal price, String description) {
         Item newItem = new Item();
@@ -209,11 +196,12 @@ public class CartControllerTest {
     }
 
     /**
-     * Helper method to create a Cart instance.
+     * Create Cart
+     *
      * @param cartId
      * @param items
      * @param user
-     * @return  Cart object
+     * @return newCart
      */
     public Cart createCart(long cartId, ArrayList<Item> items, User user) {
         Cart newCart = new Cart();

@@ -93,13 +93,13 @@ public class OrderControllerTest {
     }
 
     /**
-     * Helper method to create a User instance
+     * Create user
      *
      * @param userId
      * @param username
      * @param password
      * @param cart
-     * @return User object
+     * @return newUser
      */
     public User createUser(long userId, String username, String password, Cart cart) {
         User newUser = new User();
@@ -111,13 +111,13 @@ public class OrderControllerTest {
     }
 
     /**
-     * Helper method to create an Item instance
+     * Create item
      *
      * @param id
      * @param name
      * @param price
      * @param description
-     * @return Item object.
+     * @return newItem
      */
     public Item createItem(Long id, String name, BigDecimal price, String description) {
         Item newItem = new Item();
@@ -129,12 +129,12 @@ public class OrderControllerTest {
     }
 
     /**
-     * Helper method to create a Cart instance.
+     * Create Cart
      *
      * @param cartId
      * @param items
      * @param user
-     * @return Cart object
+     * @return newCart
      */
     public Cart createCart(long cartId, ArrayList<Item> items, User user) {
         Cart newCart = new Cart();

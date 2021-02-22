@@ -55,7 +55,7 @@ public class UserControllerTest {
 
     @Test
     public void testFindUserById() throws Exception {
-        // Create User
+        //Create new user
         final ResponseEntity<User> createdUserResponse = createTestingUser();
         assertNotNull(createdUserResponse);
         assertEquals(200, createdUserResponse.getStatusCodeValue());
@@ -78,7 +78,7 @@ public class UserControllerTest {
 
     @Test
     public void testFindUserByUsername() throws Exception {
-        // Create User
+        // Create new User
         final ResponseEntity<User> createdUserResponse = createTestingUser();
         assertNotNull(createdUserResponse);
         assertEquals(200, createdUserResponse.getStatusCodeValue());
@@ -128,6 +128,10 @@ public class UserControllerTest {
         assertEquals(404, response.getStatusCodeValue());
     }
 
+    /**
+     * Create testing user
+     * @return
+     */
     public ResponseEntity<User> createTestingUser() {
         when(encoder.encode("12345678")).thenReturn("12345678Hashed");
         CreateUserRequest userRequest = new CreateUserRequest();

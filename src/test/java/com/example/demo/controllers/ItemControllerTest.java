@@ -93,33 +93,4 @@ public class ItemControllerTest {
         newItem.setPrice(price);
         return newItem;
     }
-
-//    @Before
-//    public void setUp(){
-//        itemController = new ItemController();
-//        TestUtils.InjectObjects(itemController,"itemRepository",itemRepository);
-//        Item item = new Item();
-//        item.setId(1L);
-//        item.setName("A Widget");
-//        BigDecimal price = BigDecimal.valueOf(2.99);
-//        item.setPrice(price);
-//        item.setDescription("A widget description");
-//        Item item2 = new Item();
-//        item2.setName("Square Widget");
-//        item2.setPrice(BigDecimal.valueOf(1.99));
-//        item2.setDescription("A widget that is square");
-//        when(itemRepository.findAll()).thenReturn(Collections.singletonList(item));
-//        when(itemRepository.findById(1L)).thenReturn(java.util.Optional.of(item));
-//        when(itemRepository.findByName("A Widget")).thenReturn(Collections.singletonList(item));
-//    }
-//
-//    @Test
-//    public void testGetAllItems() {
-//        ResponseEntity<List<Item>> response = itemController.getItems();
-//        // assertNotEquals(response);
-//        assertEquals(200, response.getStatusCodeValue());
-//        List<Item> items = response.getBody();
-//        assertNotNull(items);
-//        assertEquals(1, items.size());
-//    }
 }
